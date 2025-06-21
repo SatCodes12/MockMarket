@@ -1,0 +1,62 @@
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.portfolio-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #0d156b;
+  padding-bottom: 0.5rem;
+}
+
+.portfolio-summary {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.portfolio-summary p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.portfolio-summary span {
+  font-weight: 600;
+  color: #0d156b;
+  margin-left: 1.5rem;
+}
+
+.change {
+  font-weight: bold;
+}
+
+.change.positive {
+  color: #28a745;
+}
+
+.change.negative {
+  color: #dc3545;
+}
+
+.no-holdings {
+  color: #888;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.holdings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

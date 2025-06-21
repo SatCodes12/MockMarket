@@ -1,0 +1,58 @@
+.order-card {
+  background-color: #f9f9ff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
+}
+
+.order-name-symbol {
+  font-size: 1.3rem;
+  color: #0d156b;
+  margin-bottom: 0.6rem;
+}
+
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3rem 0;
+}
+
+.order-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.order-card strong {
+  font-weight: 600;
+}
+
+.order-card span {
+  margin-left: 0.4rem;
+  font-weight: 500;
+  color: #0d156b;
+}
+
+.order-date {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.order-type.buy span {
+  color: #28a745;
+}
+
+.order-type.sell span {
+  color: #dc3545;
+}

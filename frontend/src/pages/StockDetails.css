@@ -1,0 +1,101 @@
+.main-section {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.stock-details {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.stock-info h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #0d156b;
+}
+
+.stock-symbol {
+  font-size: 1rem;
+  color: #103469;
+  margin-top: 0.25rem;
+}
+
+.stock-current-price {
+  margin-top: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #100682;
+}
+
+.stock-current-price span {
+  margin-left: 1.2rem;
+}
+
+.stock-current-price .percentage-change {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.chart-link {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #4f46c7;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.chart-link:hover {
+  background-color: #352ac5;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.status-message.loading {
+  color: #132084;
+}
+
+.status-message.error {
+  color: red;
+}
+
+.percentage-change {
+  font-weight: bold;
+}
+
+.percentage-change.positive {
+  color: green;
+}
+
+.percentage-change.negative {
+  color: red;
+}
+
+.percentage-change.neutral {
+  color: gray;
+}

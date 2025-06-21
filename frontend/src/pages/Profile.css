@@ -1,0 +1,44 @@
+.profile {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.profile h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+  border-bottom: 2px solid #1c1a1a;
+  padding-bottom: 10px;
+}
+
+.profile p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.profile strong {
+  color: #555;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
