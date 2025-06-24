@@ -16,7 +16,7 @@
 .indices-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 30%;
+  gap: 25%;
   justify-content: flex-start;
 }
 

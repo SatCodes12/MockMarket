@@ -50,7 +50,7 @@ router.get("/stockholding/:symbol", isAuthenticated, async (req, res) => {
     );
 
     if (result.rows.length === 0) {
-      return res.status(404).json({ error: "Stock holding not found" });
+      return res.json({ quantity: 0, avg_buy_price: 0 });
     }
 
     res.json(result.rows[0]);
