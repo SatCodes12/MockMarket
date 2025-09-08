@@ -24,11 +24,14 @@ function Portfolio() {
         setInvested(parseFloat(invRes.totalHoldingsValue) || 0);
         setHoldings(holdRes || []);
 
+        const prices = await Promise.all(
+          holdRes.map(stock => fetchStockPrice(stock.company_symbol))
+        );
+
         let totalValue = 0;
-        for (let stock of holdRes) {
-          const data = await fetchStockPrice(stock.company_symbol);
-          const currentPrice = data["Current Price"] || 0;
-          totalValue += stock.quantity * currentPrice;
+        for (let i = 0; i < holdRes.length; i++) {
+          const currentPrice = prices[i]["Current Price"] || 0;
+          totalValue += holdRes[i].quantity * currentPrice;
         }
 
         setPortfolioValue(totalValue);
